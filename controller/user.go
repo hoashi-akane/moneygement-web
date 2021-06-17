@@ -7,16 +7,24 @@ func UserHandler(w http.ResponseWriter, r *http.Request) {
 	// request switcher
 	switch r.Method {
 	case http.MethodGet:
-		findAll(w, r)
+		findUserList()
 	case http.MethodPost:
-
+		findUser()
 	case http.MethodPatch:
-
+		updateUser()
 	case http.MethodDelete:
-
+		deleteUser()
 	}
 }
 
-func findAll(w http.ResponseWriter, r *http.Request) {
+func findUserList() {
+}
 
+func findUser() {
+}
+
+func updateUser() {
+}
+
+func deleteUser() {
 }
